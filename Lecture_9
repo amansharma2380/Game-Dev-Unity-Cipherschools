@@ -1,0 +1,35 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class loops : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        //**************FOR LOOP***********
+        /*for (int i = 0; i <= 10; i++)
+        {
+            Debug.Log("valu of i:" + i);
+        }*/
+        int  i = 0;
+        //***********WHILE LOOP**************
+        /*while(i <= 10)
+        {
+            Debug.Log("value of i :" + i);
+            i++;
+        }*/
+        //*********DO WHILE************
+        do
+        {
+            Debug.Log("value of i :" + i);
+            i++;
+        } while (i <= 10);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
