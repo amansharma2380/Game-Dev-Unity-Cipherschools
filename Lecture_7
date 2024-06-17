@@ -1,0 +1,43 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class if_else : MonoBehaviour
+{
+    // Start is called before the first frame update
+    public int age , score;
+    void Start()
+    {
+        /*if (age < 18)
+        {
+            Debug.Log("You are a teenager ");
+        }
+        else if (age >= 18 && age < 60)
+        {
+            Debug.Log("You are an adult");
+        }
+        else
+        {
+            Debug.Log("You are old ");
+        }*/
+        switch(score)
+        {
+            case 10:
+                Debug.Log("perfect Score");
+                break;
+            case 5:
+                Debug.Log("half score");
+                break;
+            default:
+                Debug.Log("not recognize");
+                break;
+        }
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
