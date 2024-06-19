@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ball_controller : MonoBehaviour
+{
+    public int Speed;
+   
+
+    // Update is called once per frame
+    void Update()
+    {
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+
+        Vector3 movement = new Vector3(horizontalInput, 0.0f, verticalInput) * Speed * Time.deltaTime;
+        Rigidbody rb = GetComponent<Rigidbody>();
+        rb.AddForce(movement, ForceMode.Impulse);
+    }
+}
