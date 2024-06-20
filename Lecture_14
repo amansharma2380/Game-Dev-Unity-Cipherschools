@@ -1,0 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class camera_follow : MonoBehaviour
+{
+    // Start is called before the first frame update
+    public Transform ball;
+    public Vector3 offset;
+    void Update()
+    {
+        //camera position = ball position + offset(distance for proper view)
+        transform.position = ball.position + offset;
+    }
+}
