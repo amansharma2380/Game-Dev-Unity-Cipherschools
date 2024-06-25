@@ -1,0 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class levelmanager : MonoBehaviour
+{
+    public GameObject ballprefab;
+    public Transform initialpos;
+    public camera_follow camerafollow;
+    // Start is called before the first frame update
+    void Start()
+    {
+        GameObject go = Instantiate(ballprefab, initialpos.position, Quaternion.identity);
+        camerafollow.ball = go.transform;
+    }
+}
